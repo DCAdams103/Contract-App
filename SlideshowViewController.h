@@ -14,7 +14,7 @@
     __weak NSString *imageName;
     __weak NSString *filePath, *documentsPath;
     BOOL first;
-    __weak DBRestClient *restClient;
+    __strong DBRestClient *restClient;
     __weak NSTimer *firstTimer, *mainTimer;
     int orderInt;
     

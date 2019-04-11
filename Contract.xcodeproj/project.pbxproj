@@ -21,7 +21,10 @@
 		72189E1F1D247A1A0072D88C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72189E1D1D247A1A0072D88C /* ThirdViewController.m */; };
 		72189E231D24A9940072D88C /* LinearInterpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72189E221D24A9940072D88C /* LinearInterpView.m */; };
 		724639EA1D2C51310080B921 /* SlideshowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724639E91D2C51310080B921 /* SlideshowViewController.m */; };
+		724ECD171E9EC3E000EBDBD4 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724ECD161E9EC3E000EBDBD4 /* FourthViewController.m */; };
 		727427821D25AB2100FB8AA2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727427811D25AB2100FB8AA2 /* QuartzCore.framework */; };
+		727AAF931E95812D00ABFE06 /* Summer2017ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 727AAF921E95812D00ABFE06 /* Summer2017ViewController.m */; };
+		7290AD7E1DC98E7300473A3F /* ChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7290AD7D1DC98E7300473A3F /* ChoiceViewController.m */; };
 		72B3A8851D298CC2002804CA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B3A8841D298CC2002804CA /* Security.framework */; };
 		72B3A8871D298CFA002804CA /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B3A8861D298CFA002804CA /* DropboxSDK.framework */; };
 /* End PBXBuildFile section */
@@ -71,7 +74,13 @@
 		72189E221D24A9940072D88C /* LinearInterpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearInterpView.m; sourceTree = "<group>"; };
 		724639E81D2C51310080B921 /* SlideshowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlideshowViewController.h; path = ../SlideshowViewController.h; sourceTree = "<group>"; };
 		724639E91D2C51310080B921 /* SlideshowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SlideshowViewController.m; path = ../SlideshowViewController.m; sourceTree = "<group>"; };
+		724ECD151E9EC3E000EBDBD4 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		724ECD161E9EC3E000EBDBD4 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		727427811D25AB2100FB8AA2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		727AAF911E95812D00ABFE06 /* Summer2017ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Summer2017ViewController.h; sourceTree = "<group>"; };
+		727AAF921E95812D00ABFE06 /* Summer2017ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Summer2017ViewController.m; sourceTree = "<group>"; };
+		7290AD7C1DC98E7300473A3F /* ChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceViewController.h; sourceTree = "<group>"; };
+		7290AD7D1DC98E7300473A3F /* ChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoiceViewController.m; sourceTree = "<group>"; };
 		72B3A8841D298CC2002804CA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		72B3A8861D298CFA002804CA /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,12 +148,18 @@
 				72189DE81D2467110072D88C /* GameScene.sks */,
 				724639E81D2C51310080B921 /* SlideshowViewController.h */,
 				724639E91D2C51310080B921 /* SlideshowViewController.m */,
+				7290AD7C1DC98E7300473A3F /* ChoiceViewController.h */,
+				7290AD7D1DC98E7300473A3F /* ChoiceViewController.m */,
 				72189DEA1D2467110072D88C /* GameViewController.h */,
 				72189DEB1D2467110072D88C /* GameViewController.m */,
+				727AAF911E95812D00ABFE06 /* Summer2017ViewController.h */,
+				727AAF921E95812D00ABFE06 /* Summer2017ViewController.m */,
 				72189E171D247A0F0072D88C /* SecondViewController.h */,
 				72189E181D247A0F0072D88C /* SecondViewController.m */,
 				72189E1C1D247A1A0072D88C /* ThirdViewController.h */,
 				72189E1D1D247A1A0072D88C /* ThirdViewController.m */,
+				724ECD151E9EC3E000EBDBD4 /* FourthViewController.h */,
+				724ECD161E9EC3E000EBDBD4 /* FourthViewController.m */,
 				72189DED1D2467110072D88C /* Main.storyboard */,
 				72189DF01D2467110072D88C /* Assets.xcassets */,
 				72189DF21D2467110072D88C /* LaunchScreen.storyboard */,
@@ -242,7 +257,7 @@
 		72189DD41D2467110072D88C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Dylan Adams";
 				TargetAttributes = {
 					72189DDB1D2467110072D88C = {
@@ -315,11 +330,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				72189E1A1D247A0F0072D88C /* SecondViewController.m in Sources */,
+				7290AD7E1DC98E7300473A3F /* ChoiceViewController.m in Sources */,
 				72189DEC1D2467110072D88C /* GameViewController.m in Sources */,
 				72189E1F1D247A1A0072D88C /* ThirdViewController.m in Sources */,
 				72189DE41D2467110072D88C /* AppDelegate.m in Sources */,
+				724ECD171E9EC3E000EBDBD4 /* FourthViewController.m in Sources */,
 				72189DE71D2467110072D88C /* GameScene.m in Sources */,
 				724639EA1D2C51310080B921 /* SlideshowViewController.m in Sources */,
+				727AAF931E95812D00ABFE06 /* Summer2017ViewController.m in Sources */,
 				72189E231D24A9940072D88C /* LinearInterpView.m in Sources */,
 				72189DE11D2467110072D88C /* main.m in Sources */,
 			);
@@ -390,8 +408,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -435,8 +455,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

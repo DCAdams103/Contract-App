@@ -13,7 +13,7 @@
 
 @end
 
-// For the Slideshow part of app
+// All for the slideshow part of app
 
 @implementation SlideShowViewController
 
@@ -46,7 +46,6 @@
 }
 
 // Grabs the photos from Dropbox
-
 -(void) downloadFiles{
     
     switch (orderInt) {
@@ -73,6 +72,8 @@
             break;
     }
     
+//    if(orderInt == 1){ imageName = @"image1";  } else if (orderInt == 2){ imageName = @"image2"; } else if (orderInt == 3) { imageName = @"image3"; } else if (orderInt == 4){ imageName = @"image4"; } else if (orderInt == 5){ imageName = @"image5"; } else if (orderInt == 6){ imageName = @"image6"; }
+    
     if(first == TRUE){
         
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -84,7 +85,7 @@
     
     BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:filePath];
     
-    // If it doesnt exist go grab it from dropbox
+    // If it doesnt exist it'll grab it from dropbox
     if(fileExists == FALSE){
         
          [restClient loadFile:[NSString stringWithFormat:@"/Slideshow Images/%@.jpeg", imageName] intoPath:filePath];
@@ -93,17 +94,18 @@
         
     }
     
-    // Loads the files only once
+    // Loads files only once
     if(first == TRUE){
         
         NSLog(@"first");
         
         [restClient loadFile:[NSString stringWithFormat:@"/Slideshow Images/image1.jpeg"] intoPath:filePath];
+        [restClient loadFile:[NSString stringWithFormat:@"/Slideshow Images/image4.jpeg"] intoPath:filePath];
         
         UIImage *slideshowImage = [[UIImage alloc] initWithContentsOfFile: filePath];
         _slideShowImageView.image = slideshowImage;
         
-        firstTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(animationMethod) userInfo:nil repeats:YES];
+        firstTimer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(animationMethod) userInfo:nil repeats:YES];
         
         //first = FALSE;
         
@@ -117,7 +119,7 @@
     
 }
 
-// Switches photos every 6 seconds.
+// Switches photos every 6 seconds
 -(void) animationMethod{
     
     if(orderInt == 1 && first == TRUE){
@@ -195,23 +197,23 @@
         
         orderInt = 1 ;
         
-    }/* else if (orderInt == 6){
-        
-        [self downloadFiles];
-        
-        [UIView transitionWithView:_slideShowImageView
-                          duration:1 options:UIViewAnimationOptionTransitionCrossDissolve
-                        animations:^{
-                            _slideShowImageView.image = [UIImage imageNamed:filePath];
-                        }completion:nil];
-        
-        
-        
-        NSLog(@"Image 6: %@", filePath);
-        
-        orderInt = 1;
-        
-    }*/
+    } /*else if (orderInt == 6){
+//        
+//        [self downloadFiles];
+//        
+//        [UIView transitionWithView:_slideShowImageView
+//                          duration:1 options:UIViewAnimationOptionTransitionCrossDissolve
+//                        animations:^{
+//                            _slideShowImageView.image = [UIImage imageNamed:filePath];
+//                        }completion:nil];
+//        
+//        
+//        
+//        NSLog(@"Image 6: %@", filePath);
+//        
+//        orderInt = 1;
+//        
+    } */
     
 }
 
@@ -223,7 +225,7 @@
     
 }
 
-// Once touched it will switch out of slideshow
+// Once touched it will end slideshow
 -(void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     [self performSegueWithIdentifier:@"passSegueSlideshow" sender:nil];
