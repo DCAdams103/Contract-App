@@ -1,6 +1,8 @@
 # Contract-App
 An app I developed for Quarter Note Music to make signing up for lessons to save paper and to increase organization.
 
+This was the first major programming project from 2 year agos that I've done. I had a lot of fun and learned a lot. 
+
 You can find all the classes and code inside the folder "iPad Contract (Horizontal)".
 
 It begins asking which semester you want to sign up in
